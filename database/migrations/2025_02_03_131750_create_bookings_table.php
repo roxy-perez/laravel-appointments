@@ -14,6 +14,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('bookings', function (Blueprint $table) {
+            $table->id();
             $table->foreignIdFor(User::class)->constrained();
             $table->foreignIdFor(Slot::class)->constrained();
             $table->timestamps();

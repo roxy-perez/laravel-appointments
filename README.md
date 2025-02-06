@@ -4,7 +4,6 @@
 This repository contains the source code for the Laravel Appointments application.
 
 - The application has the following entities:
-  - Reservation system, entities: 
     - Business
     - Slot
     - User

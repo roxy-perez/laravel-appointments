@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\Models\Business;
 use Illuminate\Console\Command;
+use Illuminate\Support\Carbon;
 
 class GenerateBusinessSlots extends Command
 {

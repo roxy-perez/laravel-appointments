@@ -40,7 +40,7 @@ class Slot extends Model
 
     public function canBeBooked(): bool
     {
-        return $this->slot_date->isFuture() && !$this->isBooked();
+        return $this->slot_date->isFuture() && ! $this->isBooked();
     }
 
     public function isBooked(): bool
@@ -58,3 +58,4 @@ class Slot extends Model
         return $this->isBooked() && $this->booking->canBeCancelledByUser(auth()->user());
     }
 }
+
